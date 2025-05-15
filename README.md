@@ -1,10 +1,38 @@
-# SQL Injection Demo (Educational)
+# SQL Injection Demo (Educational Example)
 
-This project demonstrates how SQL Injection works by comparing a vulnerable query against a safe, parameterized one using SQLite in Python. If you dont like anything within this code feel free to tell me inorder to improve it.
+## Overview
 
-> ⚠️ This is for **educational purposes only**. Do NOT use raw string SQL queries in production code. ⚠️
+This project demonstrates the basics of **SQL Injection** vulnerabilities by comparing:
 
-##  How to Run
+- A vulnerable login function that constructs SQL queries unsafely by concatenating user input.
+- A secure login function that uses parameterized queries to prevent SQL injection.
 
-```bash
-python sql_injection_demo.py
+It uses an **in-memory SQLite database** for safe, local demonstration purposes only.
+
+---
+
+## Important Notice
+
+- This script is for **educational purposes only**.
+- It is **NOT** intended for real-world exploitation, penetration testing, or attacking any live systems.
+- The database is temporary and exists only while the script is running.
+- Do **NOT** use the vulnerable coding patterns shown here in any production or public-facing applications.
+
+---
+
+## Features
+
+- Interactive command-line interface with a simple menu.
+- Demonstrates how certain malicious inputs can bypass authentication when queries are constructed unsafely.
+- Shows how parameterized queries defend against such attacks.
+- Easy to run and modify for learning purposes.
+
+---
+
+## How to Run
+
+1. Make sure you have Python 3 installed.
+2. Run the script from a terminal or command prompt:
+
+   ```bash
+   python sql_injection_demo.py
